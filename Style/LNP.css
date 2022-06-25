@@ -1,0 +1,83 @@
+*{
+    font-family: "Bahnschrift", sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+
+    --raised-background-color: #313131;
+    --raised-box-shadow: 0 1.6px 3.6px 0 hsla(0,0%,100%,0.132),0 0.3px 0.9px 0 hsla(0,0%,100%,0.108);
+    --alt-text-color: #fff;
+}
+
+body{
+    background-color: #242424;
+}
+
+.logo{
+    align-content: center;
+    width: 300px;
+    cursor: pointer;
+}
+
+table th{
+    background-color: black;
+    text-align: center;
+}
+
+table{
+    background-color: #1f1f1f;
+}
+
+td, th{
+    border: 2px solid rgb(158, 158, 158);
+    text-align: left;
+    padding: 8px;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: #1f1f1f;
+}
+
+#gatsby, body, html {
+	height: 50%;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.gatsby-title{
+    text-align: center;
+}
+
+element {
+	outline: none;
+}
+
+.main-content-block {
+	margin: 1rem auto;
+	max-width: 960px;
+	padding: .4rem 2rem 2rem;
+}
+
+.raised {
+	background-color: var(--raised-background-color);
+	box-shadow: var(--raised-box-shadow);
+	color: var(--alt-text-color);
+}
+
+.spoiler-text{
+    background-color: black;
+    border-radius: 12px;
+    color: black;
+    transition: 0.2s ease-in-out;
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+    -o-user-select: none;
+}
+
+.spoiler-text:hover{
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+}

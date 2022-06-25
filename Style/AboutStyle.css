@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.about-wrapper{
+    height: 100vh;
+}
+
+.about-left{
+    background-color: var(--Panel-Left-Background);
+    background-image: url(./Image/Sky\ High.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.about-left-content > div{
+    background: var(--Panel-Top-Background);
+    padding: 4rem 4rem 2.5rem 5rem;
+    text-align: center;
+}
+
+.about-left-content{
+    box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+    -webkit-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+}
+
+body{
+    --Panel-Left-Background: #0c1018;
+    --Panel-Top-Background: #101624;
+    --Icons-Background: #0b111b;
+    --Button-Border-Colour: #3e518a;
+}
+
+.about-img img{
+    display: block;
+    width: 200px;
+}
+
+.spoiler-text{
+    color: black;
+    background-color: black;
+    cursor: default;
+    border-radius: 12px;
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+    -o-user-select: none;
+}
+
+.about-img{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+
+.shadow{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.about-left-content h2{
+    font-size: 2rem;
+    margin: 2.2rem 0 0.6rem 0;
+    line-height: 1.2;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgb(106, 105, 163);
+}
+
+.about-left-content h3{
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-top: 1.2rem;
+}
+
+.icons{
+    background: var(--Icons-Background);
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem 0;
+}
+
+.icons li{
+    list-style: none;
+    background: #3e51a8;
+    width: 40px;
+    height: 40px;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.icons li:hover{
+    background-color: #4e66cf;
+    color: aliceblue;
+}
+
+.about-right{
+    background: var(--Panel-Top-Background);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem;
+    text-align: center;
+}
+
+.about-right h1{
+    font-size: 7rem;
+    text-transform: uppercase;
+}
+
+.about-right h2{
+    font-weight: 600;
+}
+
+.about-btns{
+    display: flex;
+    margin: 1rem 0;
+}
+
+.btn{
+    border: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    border: 2px solid var(--Button-Border-Colour);
+    border-radius: 1px;
+    padding: 0.55rem 0;
+    width: 130px;
+    height: 50px;
+    font-weight: 600;
+    background: transparent;
+    margin:  0 0.5rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btn:hover{
+    background: var(--Button-Border-Colour);
+}
+
+.about-para p{
+    font-weight: 300;
+    padding: 0.5rem;
+    opacity: 0.8;
+}
+
+.ListNames{
+    display: flex;
+    margin: 3rem 0;
+}
+
+.ListNames_Button{
+    border: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    border: 2px solid var(--Button-Border-Colour);
+    border-radius: 1px;
+    padding: 0.55rem 0;
+    width: 400px;
+    height: 50px;
+    font-weight: 600;
+    background: transparent;
+    margin:  0 0.5rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.ListNames_Button:hover{
+    background: var(--Button-Border-Colour);
+}
+
+@media screen and (min-width: 992px) {
+    .about-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
